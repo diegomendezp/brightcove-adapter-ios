@@ -24,7 +24,7 @@ target 'YouboraBrightcoveAdapter' do
     common_lib
     #pod 'Brightcove-Player-Core/dynamic'
     #pod 'Brightcove-Player-SDK-IMA'
-    pod 'Brightcove-Player-IMA', '~> 6.7'
+    #pod 'Brightcove-Player-IMA', '~> 6.7'
     #pod 'Brightcove-Player-OnceUX/dynamic'
 end
 
@@ -36,7 +36,7 @@ target 'YouboraBrightcoveAdapter tvOS' do
     
     # Pods for YouboraBrightcoveAdapter
     common_lib
-    pod 'Brightcove-Player-Core'
+    #pod 'Brightcove-Player-Core'
 end
 
 target 'BrightcoveAdapterExample' do
@@ -47,7 +47,7 @@ target 'BrightcoveAdapterExample' do
     
     # Pods for BrightcoveAdapterExample
     #pod 'Brightcove-Player-SDK'
-    pod 'Brightcove-Player-IMA', '~> 6.7'
+    #pod 'Brightcove-Player-IMA', '~> 6.7'
     common_lib_examples
    
 end
@@ -58,8 +58,8 @@ target 'BasicSSAIPlayer' do
   use_frameworks!
   
   # Pods for BasicSSAIPlayer
-  pod 'Brightcove-Player-SSAI'
-  pod 'Brightcove-Player-IMA'
+  #pod 'Brightcove-Player-SSAI'
+  #pod 'Brightcove-Player-IMA'
   common_lib_examples
 end
 
@@ -70,7 +70,7 @@ target 'BasicSSAIPlayer tvOS' do
   platform :tvos, '11.0'
   
   # Pods for BasicSSAIPlayer tvOS
-  pod 'Brightcove-Player-SSAI'
+ # pod 'Brightcove-Player-SSAI'
   common_lib_examples
 end
 
