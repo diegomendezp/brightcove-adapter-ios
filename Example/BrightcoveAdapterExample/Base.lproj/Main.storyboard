@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16G29" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="qJP-0b-fIv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="vaw-4g-Q4h">
+            <objects>
+                <viewController id="OZE-w4-owh" customClass="ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="GAJ-XS-aWi"/>
+                        <viewControllerLayoutGuide type="bottom" id="YQ2-mP-FNa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eRS-IF-kNz">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="kGy-cP-BHI" userLabel="videoContainer">
+                                <rect key="frame" x="0.0" y="20" width="600" height="580"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
+                        <constraints>
+                            <constraint firstItem="kGy-cP-BHI" firstAttribute="top" secondItem="GAJ-XS-aWi" secondAttribute="bottom" id="8GZ-uO-LtU"/>
+                            <constraint firstAttribute="trailing" secondItem="kGy-cP-BHI" secondAttribute="trailing" id="8op-MY-UVW"/>
+                            <constraint firstItem="YQ2-mP-FNa" firstAttribute="top" secondItem="kGy-cP-BHI" secondAttribute="bottom" id="FSs-Vq-ogj"/>
+                            <constraint firstItem="kGy-cP-BHI" firstAttribute="leading" secondItem="eRS-IF-kNz" secondAttribute="leading" id="nfX-dp-KXH"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="videoContainer" destination="kGy-cP-BHI" id="sd6-SR-5d1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMh-gX-xrN" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1231" y="169"/>
+        </scene>
+        <!--BasicIMAPlayer-->
+        <scene sceneID="8l3-qj-IZT">
+            <objects>
+                <viewController id="Wfg-b0-8UN" customClass="MainViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="0ac-qi-qE1"/>
+                        <viewControllerLayoutGuide type="bottom" id="H0G-jS-R2l"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="eDN-xM-hQh">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NSJ-Yb-hRZ">
+                                <rect key="frame" x="172.5" y="191" width="30" height="30"/>
+                                <state key="normal" title="Play"/>
+                                <connections>
+                                    <segue destination="OZE-w4-owh" kind="show" id="p94-z6-7fw">
+                                        <nil key="action"/>
+                                    </segue>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1RA-OI-McN">
+                                <rect key="frame" x="135.5" y="420" width="104" height="30"/>
+                                <state key="normal" title="Youbora config"/>
+                                <connections>
+                                    <action selector="showConfigClicked:" destination="Wfg-b0-8UN" eventType="touchUpInside" id="Mgw-CF-7PU"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8sy-Vz-4lP">
+                                <rect key="frame" x="114" y="458" width="147" height="30"/>
+                                <state key="normal" title="Reset Youbora config"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="H0G-jS-R2l" firstAttribute="top" secondItem="8sy-Vz-4lP" secondAttribute="bottom" constant="179" id="7ap-oQ-ft7"/>
+                            <constraint firstItem="1RA-OI-McN" firstAttribute="centerX" secondItem="eDN-xM-hQh" secondAttribute="centerX" id="8Tn-8s-mBh"/>
+                            <constraint firstItem="NSJ-Yb-hRZ" firstAttribute="top" secondItem="0ac-qi-qE1" secondAttribute="bottom" constant="127" id="LUK-rA-PcQ"/>
+                            <constraint firstItem="8sy-Vz-4lP" firstAttribute="centerX" secondItem="eDN-xM-hQh" secondAttribute="centerX" id="UEb-ku-a7u"/>
+                            <constraint firstItem="NSJ-Yb-hRZ" firstAttribute="centerX" secondItem="eDN-xM-hQh" secondAttribute="centerX" id="aRq-Yu-62h"/>
+                            <constraint firstItem="8sy-Vz-4lP" firstAttribute="top" secondItem="1RA-OI-McN" secondAttribute="bottom" constant="8" id="lBv-c2-Abm"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="BasicIMAPlayer" id="UVL-u1-yua"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="z2c-6R-myE" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1956" y="169"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="bfD-sT-RcE">
+            <objects>
+                <navigationController id="qJP-0b-fIv" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="AeP-Lo-USn">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Wfg-b0-8UN" kind="relationship" relationship="rootViewController" id="FUf-9k-Cyu"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UjA-Y4-vtb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-2697" y="169"/>
+        </scene>
+        <!--Youbora config-->
+        <scene sceneID="Bv5-cl-BFA">
+            <objects>
+                <viewController id="YZ1-tq-0lY" customClass="YouboraConfigViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="I5N-MI-jcH"/>
+                        <viewControllerLayoutGuide type="bottom" id="dwa-5q-G8j"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="4c6-Qv-Nyp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vJC-Ds-Bg0">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </scrollView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="vJC-Ds-Bg0" firstAttribute="width" secondItem="4c6-Qv-Nyp" secondAttribute="width" id="a5N-s7-9TP"/>
+                            <constraint firstItem="vJC-Ds-Bg0" firstAttribute="centerY" secondItem="4c6-Qv-Nyp" secondAttribute="centerY" id="g8H-Ww-e4N"/>
+                            <constraint firstItem="vJC-Ds-Bg0" firstAttribute="centerX" secondItem="4c6-Qv-Nyp" secondAttribute="centerX" id="kS9-4A-qlz"/>
+                            <constraint firstItem="vJC-Ds-Bg0" firstAttribute="height" secondItem="4c6-Qv-Nyp" secondAttribute="height" id="pVa-yr-HL1"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="Youbora config" id="H6Y-Sa-U9m"/>
+                    <connections>
+                        <outlet property="scrollView" destination="vJC-Ds-Bg0" id="RxB-ad-Hk1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kpb-hT-bTX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1956" y="1002"/>
+        </scene>
+    </scenes>
+</document>

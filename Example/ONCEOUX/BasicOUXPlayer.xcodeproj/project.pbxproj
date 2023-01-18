@@ -1,0 +1,538 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		90C8383EE76F5055193DFCD8 /* Pods_BasicOUXPlayer.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BA6380DAC34327A6DFCC99EE /* Pods_BasicOUXPlayer.framework */; };
+		986A4F4A1A8E730100536D09 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 986A4F491A8E730100536D09 /* main.m */; };
+		986A4F4D1A8E730100536D09 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 986A4F4C1A8E730100536D09 /* AppDelegate.m */; };
+		986A4F501A8E730100536D09 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 986A4F4F1A8E730100536D09 /* ViewController.m */; };
+		986A4F531A8E730100536D09 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 986A4F511A8E730100536D09 /* Main.storyboard */; };
+		986A4F551A8E730100536D09 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 986A4F541A8E730100536D09 /* Images.xcassets */; };
+		986A4F581A8E730100536D09 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 986A4F561A8E730100536D09 /* LaunchScreen.xib */; };
+		CD793E3421107630002B96B7 /* YouboraBrightcoveAdapter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD793E3121107627002B96B7 /* YouboraBrightcoveAdapter.framework */; };
+		CD793E3521107630002B96B7 /* YouboraBrightcoveAdapter.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD793E3121107627002B96B7 /* YouboraBrightcoveAdapter.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		CD793E3C2110AB01002B96B7 /* BrightcoveOUX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD793E3A2110AB01002B96B7 /* BrightcoveOUX.framework */; };
+		CD793E3D2110AB06002B96B7 /* BrightcoveOUX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CD793E3A2110AB01002B96B7 /* BrightcoveOUX.framework */; };
+		CD793E3E2110AB07002B96B7 /* BrightcoveOUX.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = CD793E3A2110AB01002B96B7 /* BrightcoveOUX.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CD793E3021107627002B96B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD793E2B21107626002B96B7 /* YouboraBrightcoveAdapter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CDE140101F4EC045009F49AA;
+			remoteInfo = YouboraBrightcoveAdapter;
+		};
+		CD793E3221107627002B96B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD793E2B21107626002B96B7 /* YouboraBrightcoveAdapter.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = CD2F8BDD1F9F916F00B280B3;
+			remoteInfo = "YouboraBrightcoveAdapter tvOS";
+		};
+		CD793E3621107630002B96B7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CD793E2B21107626002B96B7 /* YouboraBrightcoveAdapter.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = CDE1400F1F4EC045009F49AA;
+			remoteInfo = YouboraBrightcoveAdapter;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		CD793E2A21107618002B96B7 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				CD793E3E2110AB07002B96B7 /* BrightcoveOUX.framework in Embed Frameworks */,
+				CD793E3521107630002B96B7 /* YouboraBrightcoveAdapter.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		986A4F441A8E730100536D09 /* BasicOUXPlayer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BasicOUXPlayer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		986A4F481A8E730100536D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		986A4F491A8E730100536D09 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		986A4F4B1A8E730100536D09 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		986A4F4C1A8E730100536D09 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		986A4F4E1A8E730100536D09 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		986A4F4F1A8E730100536D09 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		986A4F521A8E730100536D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		986A4F541A8E730100536D09 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		986A4F571A8E730100536D09 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		986A4F621A8E730100536D09 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		986A4F631A8E730100536D09 /* BasicOUXPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasicOUXPlayerTests.m; sourceTree = "<group>"; };
+		99C4B3857B1973848DAF4ADD /* Pods-BasicOUXPlayer.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicOUXPlayer.release.xcconfig"; path = "../../Pods/Target Support Files/Pods-BasicOUXPlayer/Pods-BasicOUXPlayer.release.xcconfig"; sourceTree = "<group>"; };
+		BA6380DAC34327A6DFCC99EE /* Pods_BasicOUXPlayer.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_BasicOUXPlayer.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		CD793E2721107617002B96B7 /* YouboraLib.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = YouboraLib.framework; path = Carthage/Build/iOS/YouboraLib.framework; sourceTree = "<group>"; };
+		CD793E2B21107626002B96B7 /* YouboraBrightcoveAdapter.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = YouboraBrightcoveAdapter.xcodeproj; path = ../../YouboraBrightcoveAdapter.xcodeproj; sourceTree = "<group>"; };
+		CD793E3A2110AB01002B96B7 /* BrightcoveOUX.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BrightcoveOUX.framework; sourceTree = "<group>"; };
+		EA9FE89497DEA7C32950782F /* Pods-BasicOUXPlayer.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-BasicOUXPlayer.debug.xcconfig"; path = "../../Pods/Target Support Files/Pods-BasicOUXPlayer/Pods-BasicOUXPlayer.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		986A4F411A8E730100536D09 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CD793E3C2110AB01002B96B7 /* BrightcoveOUX.framework in Frameworks */,
+				CD793E3D2110AB06002B96B7 /* BrightcoveOUX.framework in Frameworks */,
+				90C8383EE76F5055193DFCD8 /* Pods_BasicOUXPlayer.framework in Frameworks */,
+				CD793E3421107630002B96B7 /* YouboraBrightcoveAdapter.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3424FD4F129BDEFEDA7B1DC4 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EA9FE89497DEA7C32950782F /* Pods-BasicOUXPlayer.debug.xcconfig */,
+				99C4B3857B1973848DAF4ADD /* Pods-BasicOUXPlayer.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		4162226D683012ED28F1AF44 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BA6380DAC34327A6DFCC99EE /* Pods_BasicOUXPlayer.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		986A4F3B1A8E730100536D09 = {
+			isa = PBXGroup;
+			children = (
+				CD793E3A2110AB01002B96B7 /* BrightcoveOUX.framework */,
+				CD793E2B21107626002B96B7 /* YouboraBrightcoveAdapter.xcodeproj */,
+				CD793E2721107617002B96B7 /* YouboraLib.framework */,
+				986A4F461A8E730100536D09 /* BasicOUXPlayer */,
+				986A4F601A8E730100536D09 /* BasicOUXPlayerTests */,
+				986A4F451A8E730100536D09 /* Products */,
+				3424FD4F129BDEFEDA7B1DC4 /* Pods */,
+				4162226D683012ED28F1AF44 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		986A4F451A8E730100536D09 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				986A4F441A8E730100536D09 /* BasicOUXPlayer.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		986A4F461A8E730100536D09 /* BasicOUXPlayer */ = {
+			isa = PBXGroup;
+			children = (
+				986A4F4B1A8E730100536D09 /* AppDelegate.h */,
+				986A4F4C1A8E730100536D09 /* AppDelegate.m */,
+				986A4F4E1A8E730100536D09 /* ViewController.h */,
+				986A4F4F1A8E730100536D09 /* ViewController.m */,
+				986A4F511A8E730100536D09 /* Main.storyboard */,
+				986A4F541A8E730100536D09 /* Images.xcassets */,
+				986A4F561A8E730100536D09 /* LaunchScreen.xib */,
+				986A4F471A8E730100536D09 /* Supporting Files */,
+			);
+			path = BasicOUXPlayer;
+			sourceTree = "<group>";
+		};
+		986A4F471A8E730100536D09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				986A4F481A8E730100536D09 /* Info.plist */,
+				986A4F491A8E730100536D09 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		986A4F601A8E730100536D09 /* BasicOUXPlayerTests */ = {
+			isa = PBXGroup;
+			children = (
+				986A4F631A8E730100536D09 /* BasicOUXPlayerTests.m */,
+				986A4F611A8E730100536D09 /* Supporting Files */,
+			);
+			path = BasicOUXPlayerTests;
+			sourceTree = "<group>";
+		};
+		986A4F611A8E730100536D09 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				986A4F621A8E730100536D09 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CD793E2C21107626002B96B7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CD793E3121107627002B96B7 /* YouboraBrightcoveAdapter.framework */,
+				CD793E3321107627002B96B7 /* YouboraBrightcoveAdapter.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		986A4F431A8E730100536D09 /* BasicOUXPlayer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 986A4F671A8E730100536D09 /* Build configuration list for PBXNativeTarget "BasicOUXPlayer" */;
+			buildPhases = (
+				EA604C8BAE496C6B38EBA8D4 /* [CP] Check Pods Manifest.lock */,
+				986A4F401A8E730100536D09 /* Sources */,
+				986A4F411A8E730100536D09 /* Frameworks */,
+				986A4F421A8E730100536D09 /* Resources */,
+				B6A979BDBCEB7E8B4964B554 /* [CP] Embed Pods Frameworks */,
+				DEB5F5CDA4FF9C1F32804CB9 /* [CP] Copy Pods Resources */,
+				CD793E2A21107618002B96B7 /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CD793E3721107630002B96B7 /* PBXTargetDependency */,
+			);
+			name = BasicOUXPlayer;
+			productName = BasicOUXPlayer;
+			productReference = 986A4F441A8E730100536D09 /* BasicOUXPlayer.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		986A4F3C1A8E730100536D09 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "Brightcove Inc";
+				TargetAttributes = {
+					986A4F431A8E730100536D09 = {
+						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = DAR8GLKRWU;
+					};
+				};
+			};
+			buildConfigurationList = 986A4F3F1A8E730100536D09 /* Build configuration list for PBXProject "BasicOUXPlayer" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				English,
+				en,
+				Base,
+			);
+			mainGroup = 986A4F3B1A8E730100536D09;
+			productRefGroup = 986A4F451A8E730100536D09 /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = CD793E2C21107626002B96B7 /* Products */;
+					ProjectRef = CD793E2B21107626002B96B7 /* YouboraBrightcoveAdapter.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				986A4F431A8E730100536D09 /* BasicOUXPlayer */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		CD793E3121107627002B96B7 /* YouboraBrightcoveAdapter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YouboraBrightcoveAdapter.framework;
+			remoteRef = CD793E3021107627002B96B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		CD793E3321107627002B96B7 /* YouboraBrightcoveAdapter.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = YouboraBrightcoveAdapter.framework;
+			remoteRef = CD793E3221107627002B96B7 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		986A4F421A8E730100536D09 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986A4F531A8E730100536D09 /* Main.storyboard in Resources */,
+				986A4F581A8E730100536D09 /* LaunchScreen.xib in Resources */,
+				986A4F551A8E730100536D09 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		B6A979BDBCEB7E8B4964B554 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicOUXPlayer/Pods-BasicOUXPlayer-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/YouboraLib-iOS/YouboraLib.framework",
+				"${BUILT_PRODUCTS_DIR}/YouboraConfigUtils-iOS/YouboraConfigUtils.framework",
+				"${PODS_ROOT}/Brightcove-Player-Core/ios/dynamic/BrightcovePlayerSDK.framework",
+				"${PODS_ROOT}/Brightcove-Player-IMA/ios/BrightcoveIMA.framework",
+				"${PODS_ROOT}/GoogleAds-IMA-iOS-SDK/GoogleInteractiveMediaAds.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouboraLib.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YouboraConfigUtils.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightcovePlayerSDK.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/BrightcoveIMA.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleInteractiveMediaAds.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicOUXPlayer/Pods-BasicOUXPlayer-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DEB5F5CDA4FF9C1F32804CB9 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-BasicOUXPlayer/Pods-BasicOUXPlayer-resources.sh",
+				"${PODS_CONFIGURATION_BUILD_DIR}/Brightcove-Player-Core-iOS/BCOVPUIResources.bundle",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${UNLOCALIZED_RESOURCES_FOLDER_PATH}/BCOVPUIResources.bundle",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-BasicOUXPlayer/Pods-BasicOUXPlayer-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EA604C8BAE496C6B38EBA8D4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-BasicOUXPlayer-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		986A4F401A8E730100536D09 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				986A4F501A8E730100536D09 /* ViewController.m in Sources */,
+				986A4F4D1A8E730100536D09 /* AppDelegate.m in Sources */,
+				986A4F4A1A8E730100536D09 /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CD793E3721107630002B96B7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = YouboraBrightcoveAdapter;
+			targetProxy = CD793E3621107630002B96B7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		986A4F511A8E730100536D09 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				986A4F521A8E730100536D09 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		986A4F561A8E730100536D09 /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				986A4F571A8E730100536D09 /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		986A4F651A8E730100536D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		986A4F661A8E730100536D09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		986A4F681A8E730100536D09 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = EA9FE89497DEA7C32950782F /* Pods-BasicOUXPlayer.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DAR8GLKRWU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BasicOUXPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Brightcove.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		986A4F691A8E730100536D09 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 99C4B3857B1973848DAF4ADD /* Pods-BasicOUXPlayer.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = DAR8GLKRWU;
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+					"$(PROJECT_DIR)",
+				);
+				INFOPLIST_FILE = BasicOUXPlayer/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "Brightcove.$(PRODUCT_NAME:rfc1034identifier)";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		986A4F3F1A8E730100536D09 /* Build configuration list for PBXProject "BasicOUXPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986A4F651A8E730100536D09 /* Debug */,
+				986A4F661A8E730100536D09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		986A4F671A8E730100536D09 /* Build configuration list for PBXNativeTarget "BasicOUXPlayer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				986A4F681A8E730100536D09 /* Debug */,
+				986A4F691A8E730100536D09 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 986A4F3C1A8E730100536D09 /* Project object */;
+}
